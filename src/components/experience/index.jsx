@@ -52,7 +52,7 @@ const Experience = ({ experiences, loading }) => {
                   skeleton({ width: 'w-32', height: 'h-8' })
                 ) : (
                   <span className="text-base-content opacity-70">
-                    Experience
+                    Introduction
                   </span>
                 )}
               </h5>
@@ -62,18 +62,14 @@ const Experience = ({ experiences, loading }) => {
                 {loading ? (
                   renderSkeleton()
                 ) : (
-                  <Fragment>
-                    {experiences.map((experience, index) => (
-                      <ListItem
-                        key={index}
-                        time={`${experience.from} - ${experience.to}`}
-                        position={experience.position}
-                        company={experience.company}
-                        companyLink={
-                          experience.companyLink ? experience.companyLink : null
-                        }
-                      />
-                    ))}
+                  <Fragment style = {{}}>
+                    <span>
+                      Hello, I'm Kim ki-tae, a student at Sungkyunkwan University
+                      <br/><br/>I am learning hard about computer science.
+                      <br/><br/>Now I'm focusing on the react-native. 
+                      <br/><br/>second grade of University(bachelor)
+                      <br/><br/>Thank you for visit my website!
+                    </span>
                   </Fragment>
                 )}
               </ol>
